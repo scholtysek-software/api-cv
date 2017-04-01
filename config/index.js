@@ -1,9 +1,9 @@
 module.exports = {
   app: {
-    title: 'Patryk Scholtysek'
+    title: 'Patryk Scholtysek',
   },
   resume: {
     name: 'Patryk Scholtysek',
-    position: 'Experienced Software Developer'
-  }
+    position: 'Experienced Software Developer',
+  },
 };
