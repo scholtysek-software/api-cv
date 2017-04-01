@@ -2,6 +2,10 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(type="text/css", rel="stylesheet", href="css/materialize.min.css", media="screen, projection")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
   body
     block content
+    script(type="text/javascript")
+      include js/jquery.min.js
+      include js/materialize.min.js
