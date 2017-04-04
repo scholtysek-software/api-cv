@@ -2,11 +2,11 @@ extends layout
 
 block content
   .container
-   .row.header
-    .col.s6.center-align
-      img#picture(src="images/picture.jpg", alt=resume.name)
-    .col.s6.center-align
-      .row.valign
-        h4= resume.name
-      .row
-        p #{resume.position}
+    .columns.ssf-content.content
+     .column.is-half.has-text-centered
+        img#picture(src="images/picture.jpg", alt=resume.name)
+     .column.is-3.has-text-centered
+       .ssf-center-center
+        p.title
+          strong= resume.name
+        p.subtitle #{resume.position}
