@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= resume.name
-  p #{resume.position}
+  .container
+   .row.header
+    .col.s6.center-align
+      img#picture(src="images/picture.jpg", alt=resume.name)
+    .col.s6.center-align
+      .row.valign
+        h4= resume.name
+      .row
+        p #{resume.position}
