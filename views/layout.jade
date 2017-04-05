@@ -3,8 +3,12 @@ html
   head
     title= title
     link(type="text/css", rel="stylesheet", href="css/bulma.css", media="screen, projection")
+    link(type="text/css", rel="stylesheet", href="css/highlightjs/default.css", media="screen, projection")
     link(type="text/css", rel="stylesheet", href="css/style.css", media="screen, projection")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
   body
     block content
+
+    script(src='js/highlight.pack.min.js')
+    <script>hljs.initHighlightingOnLoad();</script>

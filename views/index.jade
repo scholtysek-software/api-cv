@@ -3,10 +3,33 @@ extends layout
 block content
   .container
     .columns.ssf-content.content
-     .column.is-half.has-text-centered
+     .column.is-2.is-offset-2
         img#picture(src="images/picture.jpg", alt=resume.name)
-     .column.is-3.has-text-centered
+     .column.is-4.is-offset-1.has-text-centered
        .ssf-center-center
         p.title
-          strong= resume.name
+          strong= resume.name.toUpperCase()
         p.subtitle #{resume.position}
+    .columns(style="margin-top:80px")
+      .column.is-2.is-offset-2(style="margin-top: 40px")
+        ul
+          li
+            a(href="#")= "Basic"
+          li
+            a(href="#")= "Education"
+          li
+            a(href="#")= "Professional career"
+          li
+            a(href="#")= "Technologies"
+          li
+            a(href="#")= "Project"
+      .column.is-5.is-offset-1
+        .tabs
+          ul
+            li.is-active
+              a= "Source"
+            li
+              a= "Preview"
+          div
+        pre.resume-content
+          code.json #{JSON.stringify(resume.basic, null, ' ')}
